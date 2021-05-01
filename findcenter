@@ -1,0 +1,32 @@
+#include <iostream>
+#include <time.h>
+#include <cstdlib>
+using namespace std;
+int baskentler(){
+    
+}
+int main(){
+	setlocale(LC_ALL,"Turkish");
+	cout<<"Oyunumuz başlıyorrr.."<<endl;
+	cout<<"Küçük harf kullanalım!!"<<endl;
+	string b[40]={"ankara","moskova","kabil","tiran","buenos aires","erivan","canberra","viyana","bakü","manama","dakka","minsk","brüksel","la paz","sofya","ottawa","santiago","pekin","bogota","zagreb","havana","lefkoşa","prag","kopenhag","kahire","paris","helsinki","tiflis","berlin","atina","budapeşte","delhi","cakarta","tahran","bağdat","dublin","tel aviv","roma","kingston","tokyo"};
+	string c[40]={"türkiye","rusya","afganistan","Arnavutluk","arjantin","ermenistan","avustralya","avusturya","azerbaycan","bahreyn","bangledeş","belarus","belçika","bolivya","bulgaristan","kanada","şili","çin","kolombiya","hırvatistan","küba","kıbrıs","çek cumhuriyeti","danimarka","mısır","fransa","finlandiya","gürcistan","almanya","yunanistan","macaristan","hindistan","endonezya","iran","ırak","irlanda","israil","italya","jamaika","japonya"};
+	int sayi;
+	string baskent;
+	baskentler();
+	srand(time(0));{
+	sayi=rand()%40;
+	cout<<"Ülkeniz: "<<c[sayi]<<endl;
+	cout<<"Ülkenin başkentini giriniz: ";
+	cin>>baskent;
+	if(baskent==b[sayi]){
+		baskentler();
+		cout<<"Doğru bildiniz.."<<endl;
+	}
+	else{
+		cout<<"Yanlışş!!!!!"<<endl;
+		cout<<"Doğrusu: "<<b[sayi]<<" olucaktı."<<endl;
+	}}
+	
+	return 0;
+}
